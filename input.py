@@ -40,7 +40,7 @@ class MyGridLayout(GridLayout):
         self.pizza = TextInput(multiline=False)
         self.top_grid.add_widget((self.pizza))
 
-        self.top_grid.add_widget(Label(text='Favorite Thickness : '))
+        self.top_grid.add_widget(Label(text='Favorite Thickness: '))
         self.thickness  = TextInput(multiline=False)
         self.top_grid.add_widget((self.thickness ))
 
