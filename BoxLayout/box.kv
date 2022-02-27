@@ -18,10 +18,11 @@
         Button:
             text: "Hello World!"
 
-        Button:
-            text: "Goodby World!"
+        RoundedButton:
+            text: "Goodbye World!"
             pos_hint: {'center_x': 0.5}
-            size_hint: (.3, 1)
+            size_hint: (1, .3)
+            on_press: print('Goodbye!')
 
         Button:
             text: "I'm  Hungry!!"
@@ -29,3 +30,17 @@
             size_hint:(None, None)
             width: 100
             height: 50
+
+<RoundedButton@Button>
+    background_color: (0, 0, 0, 0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba:(48/255, 84/255, 150/255, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [58]
+
+
+
