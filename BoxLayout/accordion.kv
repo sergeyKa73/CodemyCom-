@@ -1,0 +1,28 @@
+<MyLayout>
+	BoxLayout:
+		orientation: "vertical"
+		size: root.width, root.height
+
+		Accordion:
+			orientation: 'vertical'
+
+			AccordionItem:
+				title: "About me"
+				Label:
+				    text: 'Sergey K'
+				    font_size: 32
+
+			AccordionItem:
+				title: "Python"
+				Image:
+					source: 'Images/python.jpg'
+
+			AccordionItem:
+				title: "JavaScript"
+				Image:
+					source: 'Images/js.png'
+
+			AccordionItem:
+				title: "Linux"
+				Image:
+					source: 'Images/linux.jpg'
